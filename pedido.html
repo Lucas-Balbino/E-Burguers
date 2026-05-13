@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Burguers</title>
+    <link rel="icon" href="img/icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">E-Burguers</a>
+        </div>
+    </nav>
+</header>
+
+<main class="principal">
+
+<section class="container secao">
+
+<h2>Fazer Pedido</h2>
+
+<form>
+
+<div class="row">
+
+    <!-- PRODUTOS -->
+    <div class="col-md-6">
+
+        <h3>Produtos</h3>
+
+        <label>Hambúrguer (R$38):</label>
+        <input type="number" id="hamburguer" value="0" min="0">
+
+        <label>Batata (R$10):</label>
+        <input type="number" id="batata" value="0" min="0">
+
+        <label>Refrigerante (R$6):</label>
+        <input type="number" id="refrigerante" value="0" min="0">
+
+        <h3>Entrega</h3>
+        
+        
+
+        <label>Retirar</label>
+        <input type="radio" name="entrega">
+            
+        <label>Entrega</label>
+        <input type="radio" name="entrega">
+
+    </div>
+
+    <!-- CONTATO -->
+    <div class="col-md-6">
+
+        <h3>Contato</h3>
+
+        <label>Nome:</label>
+        <input type="text">
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>Forma de pagamento:</label>
+        <select>
+            <option>Dinheiro</option>
+            <option>Cartão</option>
+            <option>Pix</option>
+        </select>
+
+        <label>Extras:</label><br>
+        <input type="checkbox"> Ketchup<br>
+        <input type="checkbox"> Maionese<br>
+
+    </div>
+
+</div>
+
+<br>
+
+<button type="button" onclick="calcular()">Calcular</button>
+
+</form>
+
+<h3 id="resultado"></h3>
+
+</section>
+
+</main>
+
+<footer class="rodape">
+    <p>
+        <a href="https://www.unip.br" target="_blank" class="link-UNIP">
+            © 2026 - Site desenvolvido por alunos da UNIP
+        </a>
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
